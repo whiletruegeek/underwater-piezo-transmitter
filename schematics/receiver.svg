@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="2310" viewBox="0 0 1100 2310" role="img" aria-labelledby="title desc">
+<title id="title">Complete MCP6022 receiver wiring — all components</title><desc id="desc">One complete connection sheet for the existing receiver circuit. Numbered circles identify physical MCP6022 pins. Repeated pin numbers and matching net labels are the same connection. Includes pins 1 and 2 wire, both 100 kohm and 220 picofarad between pins 6 and 7, all power, reference, protection and ADC components.</desc>
+<rect width="1100" height="2310" fill="#ffffff"/><g font-family="Segoe UI, Arial, sans-serif">
+<text x="40" y="48" font-size="34" fill="#17212b" text-anchor="start" font-weight="600">RECEIVER WIRING</text>
+<text x="40" y="84" font-size="23" fill="#17212b" text-anchor="start" font-weight="400">One MCP6022 + one receive piezo + one ESP32 · breadboard version from Part 1</text>
+<text x="40" y="116" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">Same numbered circle = same chip leg. Same named label = same wire connection.</text>
+<rect x="130" y="167" width="130" height="172" rx="8" fill="#e7ecf0" stroke="#40505f" stroke-width="2"/>
+<path d="M90 188 H130 M260 188 H300" fill="none" stroke="#687986" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="72" y="195" font-size="23" fill="#17212b" text-anchor="middle" font-weight="600">8</text>
+<text x="318" y="195" font-size="23" fill="#17212b" text-anchor="middle" font-weight="600">1</text>
+<path d="M90 231 H130 M260 231 H300" fill="none" stroke="#687986" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="72" y="238" font-size="23" fill="#17212b" text-anchor="middle" font-weight="600">7</text>
+<text x="318" y="238" font-size="23" fill="#17212b" text-anchor="middle" font-weight="600">2</text>
+<path d="M90 274 H130 M260 274 H300" fill="none" stroke="#687986" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="72" y="281" font-size="23" fill="#17212b" text-anchor="middle" font-weight="600">6</text>
+<text x="318" y="281" font-size="23" fill="#17212b" text-anchor="middle" font-weight="600">3</text>
+<path d="M90 317 H130 M260 317 H300" fill="none" stroke="#687986" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="72" y="324" font-size="23" fill="#17212b" text-anchor="middle" font-weight="600">5</text>
+<text x="318" y="324" font-size="23" fill="#17212b" text-anchor="middle" font-weight="600">4</text>
+<circle cx="244" cy="182" r="7" fill="none" stroke="#7540a6" stroke-width="2" stroke-dasharray="3 2"/>
+<text x="195" y="248" font-size="22" fill="#17212b" text-anchor="middle" font-weight="400">MCP6022</text>
+<text x="195" y="276" font-size="18" fill="#17212b" text-anchor="middle" font-weight="400">UNDERSIDE</text>
+<text x="40" y="365" font-size="19" fill="#17212b" text-anchor="start" font-weight="400">Writing faces down; marked pin-1 corner is upper right.</text>
+<text x="440" y="173" font-size="24" fill="#17212b" text-anchor="start" font-weight="600">ASSEMBLY KEY</text>
+<text x="440" y="207" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">Red = 3V3 · blue = GND · purple = VREF</text>
+<text x="440" y="240" font-size="21" fill="#7540a6" text-anchor="start" font-weight="400">VREF comes from pin 1. It is NOT ground.</text>
+<text x="440" y="273" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">R = resistor · C = capacitor · D = diode</text>
+<text x="440" y="306" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">Each R/C/D label names ONE physical component.</text>
+<text x="440" y="339" font-size="20" fill="#17212b" text-anchor="start" font-weight="400">Wire shapes show connections, not required wire lengths.</text>
+<path d="M40 382 H1060" fill="none" stroke="#ced8df" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="40" y="410" font-size="27" fill="#17212b" text-anchor="start" font-weight="600">1  POWER — from the receiver ESP32</text>
+<rect x="45" y="450" width="155" height="160" rx="8" fill="#edf5fa" stroke="#40505f" stroke-width="2"/>
+<text x="122" y="479" font-size="23" fill="#17212b" text-anchor="middle" font-weight="600">ESP32</text>
+<text x="184" y="512" font-size="22" fill="#be3433" text-anchor="end" font-weight="400">3V3</text>
+<text x="184" y="604" font-size="22" fill="#2166a4" text-anchor="end" font-weight="400">GND</text>
+<path d="M200 506 H995" fill="none" stroke="#be3433" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 598 H995" fill="none" stroke="#2166a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1017" cy="506" r="22" fill="#fff" stroke="#17212b" stroke-width="3"/>
+<text x="1017" y="514" font-size="24" fill="#17212b" text-anchor="middle" font-weight="600">8</text>
+<circle cx="1017" cy="598" r="22" fill="#fff" stroke="#17212b" stroke-width="3"/>
+<text x="1017" y="606" font-size="24" fill="#17212b" text-anchor="middle" font-weight="600">4</text>
+<path d="M430 506 V545.0 M430 559.0 V598 M411 545.0 H449 M411 559.0 H449" fill="none" stroke="#40505f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="468" y="547.0" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">C1</text>
+<text x="468" y="576.0" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">100 nF / 104</text>
+<path d="M770 506 V545.0 M770 559.0 V598 M751 545.0 H789 M751 559.0 H789" fill="none" stroke="#40505f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="737" y="537.0" font-size="25" fill="#17212b" text-anchor="start" font-weight="400">+</text>
+<text x="808" y="547.0" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">C2</text>
+<text x="808" y="576.0" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">10 µF</text>
+<circle cx="430" cy="506" r="5" fill="#be3433"/>
+<circle cx="430" cy="598" r="5" fill="#2166a4"/>
+<circle cx="770" cy="506" r="5" fill="#be3433"/>
+<circle cx="770" cy="598" r="5" fill="#2166a4"/>
+<text x="300" y="635" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">C1: directly beside pins 8 and 4.</text>
+<text x="710" y="635" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">C2: + to 3V3; − to GND.</text>
+<path d="M40 649 H1060" fill="none" stroke="#ced8df" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="40" y="677" font-size="27" fill="#17212b" text-anchor="start" font-weight="600">2  MIDPOINT + REFERENCE — both are needed</text>
+<text x="100" y="724" font-size="22" fill="#be3433" text-anchor="middle" font-weight="600">3V3</text>
+<path d="M100 735 V751" fill="none" stroke="#be3433" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M100 751 V767.0 M100 815.0 V831" fill="none" stroke="#40505f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="88" y="767.0" width="24" height="48" rx="3" fill="#e3f1fc" stroke="#40505f" stroke-width="2"/>
+<text x="125" y="788.0" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">R1</text>
+<text x="125" y="814.0" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">10 kΩ</text>
+<path d="M100 831 H570" fill="none" stroke="#40505f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="592" cy="831" r="22" fill="#fff" stroke="#17212b" stroke-width="3"/>
+<text x="592" y="839" font-size="24" fill="#17212b" text-anchor="middle" font-weight="600">3</text>
+<text x="285" y="812" font-size="22" fill="#17212b" text-anchor="middle" font-weight="400">M ≈ 1.65 V</text>
+<path d="M100 831 V870.5 M100 918.5 V958" fill="none" stroke="#40505f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="88" y="870.5" width="24" height="48" rx="3" fill="#e3f1fc" stroke="#40505f" stroke-width="2"/>
+<text x="125" y="891.5" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">R2</text>
+<text x="125" y="917.5" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">10 kΩ</text>
+<path d="M100 958 V968 M82 968 H118 M88 975 H112 M95 982 H105" fill="none" stroke="#2166a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="100" y="1007" font-size="20" fill="#2166a4" text-anchor="middle" font-weight="400">GND</text>
+<path d="M285 831 V887.5 M285 901.5 V958 M266 887.5 H304 M266 901.5 H304" fill="none" stroke="#40505f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="315" y="889.5" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">C3</text>
+<text x="315" y="918.5" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">100 nF / 104</text>
+<path d="M285 958 V968 M267 968 H303 M273 975 H297 M280 982 H290" fill="none" stroke="#2166a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="285" y="1007" font-size="20" fill="#2166a4" text-anchor="middle" font-weight="400">GND</text>
+<path d="M475 831 V887.5 M475 901.5 V958 M456 887.5 H494 M456 901.5 H494" fill="none" stroke="#40505f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="442" y="879.5" font-size="25" fill="#17212b" text-anchor="start" font-weight="400">+</text>
+<text x="505" y="889.5" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">C4</text>
+<text x="505" y="918.5" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">10 µF</text>
+<path d="M475 958 V968 M457 968 H493 M463 975 H487 M470 982 H480" fill="none" stroke="#2166a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="475" y="1007" font-size="20" fill="#2166a4" text-anchor="middle" font-weight="400">GND</text>
+<circle cx="100" cy="831" r="5" fill="#40505f"/>
+<circle cx="285" cy="831" r="5" fill="#40505f"/>
+<circle cx="475" cy="831" r="5" fill="#40505f"/>
+<circle cx="755" cy="798" r="22" fill="#fff" stroke="#17212b" stroke-width="3"/>
+<text x="755" y="806" font-size="24" fill="#17212b" text-anchor="middle" font-weight="600">1</text>
+<circle cx="998" cy="798" r="22" fill="#fff" stroke="#17212b" stroke-width="3"/>
+<text x="998" y="806" font-size="24" fill="#17212b" text-anchor="middle" font-weight="600">2</text>
+<path d="M777 798 H976" fill="none" stroke="#7540a6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="875" y="765" font-size="23" fill="#7540a6" text-anchor="middle" font-weight="600">DIRECT WIRE</text>
+<path d="M868 798 V897" fill="none" stroke="#7540a6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="868" cy="798" r="5" fill="#7540a6"/>
+<text x="868" y="926" font-size="22" fill="#7540a6" text-anchor="middle" font-weight="600">VREF ≈ 1.65 V</text>
+<text x="695" y="969" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">C4: + to M; − to GND.</text>
+<text x="695" y="1000" font-size="20" fill="#17212b" text-anchor="start" font-weight="400">M and VREF are separate nodes.</text>
+<path d="M40 1032 H1060" fill="none" stroke="#ced8df" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="40" y="1060" font-size="27" fill="#17212b" text-anchor="start" font-weight="600">3  PIEZO INPUT + PROTECTION</text>
+<circle cx="100" cy="1220" r="45" fill="#f7edca" stroke="#9f8238" stroke-width="2"/>
+<text x="100" y="1218" font-size="22" fill="#17212b" text-anchor="middle" font-weight="400">RX</text>
+<text x="100" y="1245" font-size="22" fill="#17212b" text-anchor="middle" font-weight="400">piezo</text>
+<path d="M100 1175 V1138 H181" fill="none" stroke="#40505f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M181 1138 H225.0 M317.0 1138 H361" fill="none" stroke="#40505f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="225.0" y="1125" width="92" height="26" rx="3" fill="#e3f1fc" stroke="#40505f" stroke-width="2"/>
+<text x="271.0" y="1108" font-size="22" fill="#17212b" text-anchor="middle" font-weight="400">R3 · 47 kΩ</text>
+<path d="M361 1138 H995" fill="none" stroke="#40505f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1017" cy="1138" r="22" fill="#fff" stroke="#17212b" stroke-width="3"/>
+<text x="1017" y="1146" font-size="24" fill="#17212b" text-anchor="middle" font-weight="600">5</text>
+<text x="110" y="1165" font-size="20" fill="#be3433" text-anchor="start" font-weight="400">red</text>
+<path d="M100 1265 V1390 H910" fill="none" stroke="#7540a6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="113" y="1310" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">black</text>
+<text x="860" y="1420" font-size="22" fill="#7540a6" text-anchor="middle" font-weight="600">VREF = pin 1</text>
+<path d="M435 1138 V1240.0 M435 1288.0 V1390" fill="none" stroke="#40505f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="423" y="1240.0" width="24" height="48" rx="3" fill="#e3f1fc" stroke="#40505f" stroke-width="2"/>
+<text x="460" y="1261.0" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">R4</text>
+<text x="460" y="1287.0" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">1 MΩ</text>
+<path d="M650 1138 V1231 M650 1291 V1390" fill="none" stroke="#40505f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="638" y="1231" width="24" height="60" rx="4" fill="#eabc85" stroke="#40505f" stroke-width="2"/>
+<rect x="639" y="1280" width="22" height="8" rx="0" fill="#26323a" stroke="#26323a" stroke-width="2"/>
+<text x="675" y="1249" font-size="22" fill="#17212b" text-anchor="start" font-weight="600">D1</text>
+<text x="675" y="1277" font-size="20" fill="#17212b" text-anchor="start" font-weight="400">1N4148</text>
+<text x="675" y="1334" font-size="20" fill="#17212b" text-anchor="start" font-weight="400">stripe ↓</text>
+<path d="M860 1138 V1231 M860 1291 V1390" fill="none" stroke="#40505f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="848" y="1231" width="24" height="60" rx="4" fill="#eabc85" stroke="#40505f" stroke-width="2"/>
+<rect x="849" y="1241" width="22" height="8" rx="0" fill="#26323a" stroke="#26323a" stroke-width="2"/>
+<text x="885" y="1249" font-size="22" fill="#17212b" text-anchor="start" font-weight="600">D2</text>
+<text x="885" y="1277" font-size="20" fill="#17212b" text-anchor="start" font-weight="400">1N4148</text>
+<text x="885" y="1334" font-size="20" fill="#17212b" text-anchor="start" font-weight="400">stripe ↑</text>
+<circle cx="435" cy="1138" r="5" fill="#40505f"/>
+<circle cx="435" cy="1390" r="5" fill="#7540a6"/>
+<circle cx="650" cy="1138" r="5" fill="#40505f"/>
+<circle cx="650" cy="1390" r="5" fill="#7540a6"/>
+<circle cx="860" cy="1138" r="5" fill="#40505f"/>
+<circle cx="860" cy="1390" r="5" fill="#7540a6"/>
+<text x="100" y="1456" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">D1 stripe → VREF.  D2 stripe → pin 5.  The diodes face opposite ways.</text>
+<path d="M40 1484 H1060" fill="none" stroke="#ced8df" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="40" y="1512" font-size="27" fill="#17212b" text-anchor="start" font-weight="600">4  GAIN + FILTER — BOTH parts between pins 6 and 7</text>
+<circle cx="85" cy="1640" r="22" fill="#fff" stroke="#17212b" stroke-width="3"/>
+<text x="85" y="1648" font-size="24" fill="#17212b" text-anchor="middle" font-weight="600">6</text>
+<circle cx="1017" cy="1640" r="22" fill="#fff" stroke="#17212b" stroke-width="3"/>
+<text x="1017" y="1648" font-size="24" fill="#17212b" text-anchor="middle" font-weight="600">7</text>
+<path d="M107 1640 H205 V1580 H405 M695 1580 H920 V1640 H995" fill="none" stroke="#40505f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M405 1580 H504.0 M596.0 1580 H695" fill="none" stroke="#40505f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="504.0" y="1567" width="92" height="26" rx="3" fill="#e3f1fc" stroke="#40505f" stroke-width="2"/>
+<text x="550.0" y="1554" font-size="22" fill="#17212b" text-anchor="middle" font-weight="400">R6 · 100 kΩ</text>
+<path d="M205 1640 V1680 H538 M562 1680 H920 V1640 M538 1662 V1698 M562 1662 V1698" fill="none" stroke="#40505f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="550" y="1728" font-size="22" fill="#17212b" text-anchor="middle" font-weight="400">C5 · 220 pF / 221</text>
+<circle cx="205" cy="1640" r="5" fill="#40505f"/>
+<circle cx="920" cy="1640" r="5" fill="#40505f"/>
+<path d="M205 1680 V1780 H405" fill="none" stroke="#40505f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="205" cy="1680" r="5" fill="#40505f"/>
+<path d="M405 1780 H504.0 M596.0 1780 H695" fill="none" stroke="#40505f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="504.0" y="1767" width="92" height="26" rx="3" fill="#e3f1fc" stroke="#40505f" stroke-width="2"/>
+<text x="550.0" y="1754" font-size="22" fill="#17212b" text-anchor="middle" font-weight="400">R5 · 1 kΩ</text>
+<path d="M695 1780 H920" fill="none" stroke="#7540a6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="928" y="1811" font-size="22" fill="#7540a6" text-anchor="middle" font-weight="600">VREF = pin 1</text>
+<text x="85" y="1848" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">R6 and C5 are parallel: each has one end at pin 6 and one at pin 7.</text>
+<path d="M40 1876 H1060" fill="none" stroke="#ced8df" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="40" y="1904" font-size="27" fill="#17212b" text-anchor="start" font-weight="600">5  SIGNAL TO ESP32 — D34 / GPIO34</text>
+<circle cx="85" cy="1985" r="22" fill="#fff" stroke="#17212b" stroke-width="3"/>
+<text x="85" y="1993" font-size="24" fill="#17212b" text-anchor="middle" font-weight="600">7</text>
+<path d="M107 1985 H310" fill="none" stroke="#40505f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M310 1985 H374.0 M466.0 1985 H530" fill="none" stroke="#40505f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="374.0" y="1972" width="92" height="26" rx="3" fill="#e3f1fc" stroke="#40505f" stroke-width="2"/>
+<text x="420.0" y="1955" font-size="22" fill="#17212b" text-anchor="middle" font-weight="400">R7 · 1 kΩ</text>
+<path d="M530 1985 H925" fill="none" stroke="#40505f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="715" cy="1985" r="5" fill="#40505f"/>
+<rect x="925" y="1947" width="145" height="83" rx="8" fill="#edf5fa" stroke="#40505f" stroke-width="2"/>
+<text x="997" y="1978" font-size="22" fill="#17212b" text-anchor="middle" font-weight="400">ESP32</text>
+<text x="997" y="2010" font-size="24" fill="#217854" text-anchor="middle" font-weight="600">D34</text>
+<path d="M715 1985 V2037.0 M715 2051.0 V2103 M696 2037.0 H734 M696 2051.0 H734" fill="none" stroke="#40505f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="745" y="2039.0" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">C6</text>
+<text x="745" y="2068.0" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">10 nF / 103</text>
+<path d="M715 2103 V2113 M697 2113 H733 M703 2120 H727 M710 2127 H720" fill="none" stroke="#2166a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="715" y="2152" font-size="20" fill="#2166a4" text-anchor="middle" font-weight="400">GND</text>
+<text x="75" y="2074" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">C6 is on the D34 side of R7.</text>
+<text x="75" y="2107" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">ESP32 GND and chip pin 4 share ground.</text>
+<path d="M40 2180 H1060" fill="none" stroke="#ced8df" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="40" y="2216" font-size="22" fill="#17212b" text-anchor="start" font-weight="600">TOTAL: 7 resistors · 6 capacitors · 2 diodes · 1 MCP6022 · 1 piezo · 1 ESP32</text>
+<text x="40" y="2252" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">C2 and C4: 10 µF electrolytic, ≥6.3 V rating. All other capacitors: non-polar ceramic.</text>
+<text x="40" y="2285" font-size="20" fill="#17212b" text-anchor="start" font-weight="400">Power the MCP6022 from 3V3, not 5 V. Never connect a bare piezo straight to D34.</text>
+</g></svg>

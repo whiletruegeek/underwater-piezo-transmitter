@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1440" viewBox="0 0 1100 1440" role="img" aria-labelledby="title"><title id="title">Transmitter wiring: ESP32, DRV8833 module and piezo</title><rect width="1100" height="1440" fill="#ffffff"/><g font-family="Segoe UI, Arial, sans-serif">
+<text x="40" y="48" font-size="34" fill="#17212b" text-anchor="start" font-weight="600">TRANSMITTER WIRING</text>
+<text x="40" y="84" font-size="23" fill="#17212b" text-anchor="start" font-weight="400">One ESP32 + one DRV8833 motor driver module + one send piezo</text>
+<text x="40" y="116" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">Breadboard version from Part 1. Disconnect USB while wiring.</text>
+<text x="40" y="158" font-size="24" fill="#17212b" text-anchor="start" font-weight="600">KEY</text>
+<text x="40" y="190" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">Red = 5 V (VIN) · orange = 3V3 · blue = GND · grey = signal</text>
+<text x="40" y="222" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">Pin names differ between DRV8833 modules: IN1 may be printed AIN1,</text>
+<text x="40" y="252" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">nSLEEP may be SLP, EEP or STBY. Match the pins by the print on your module.</text>
+<path d="M40 278 H1060" fill="none" stroke="#ced8df" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="40" y="312" font-size="27" fill="#17212b" text-anchor="start" font-weight="600">1  WITH THE MOTOR DRIVER (what the firmware is built for)</text>
+<rect x="45" y="350" width="190" height="420" rx="8" fill="#edf5fa" stroke="#40505f" stroke-width="2"/>
+<text x="140.0" y="384" font-size="23" fill="#17212b" text-anchor="middle" font-weight="600">ESP32</text>
+<rect x="470" y="350" width="210" height="420" rx="8" fill="#eef0f2" stroke="#40505f" stroke-width="2"/>
+<text x="575.0" y="384" font-size="23" fill="#17212b" text-anchor="middle" font-weight="600">DRV8833</text>
+<text x="575.0" y="410" font-size="19" fill="#17212b" text-anchor="middle" font-weight="400">module</text>
+<text x="219" y="437" font-size="22" fill="#be3433" text-anchor="end" font-weight="400">VIN</text>
+<text x="486" y="437" font-size="22" fill="#be3433" text-anchor="start" font-weight="400">VM</text>
+<path d="M235 430 H470" fill="none" stroke="#be3433" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="219" y="507" font-size="22" fill="#c46a0a" text-anchor="end" font-weight="400">3V3</text>
+<text x="486" y="507" font-size="22" fill="#c46a0a" text-anchor="start" font-weight="400">nSLEEP</text>
+<path d="M235 500 H470" fill="none" stroke="#c46a0a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="219" y="577" font-size="22" fill="#17212b" text-anchor="end" font-weight="400">D25</text>
+<text x="486" y="577" font-size="22" fill="#17212b" text-anchor="start" font-weight="400">AIN1</text>
+<path d="M235 570 H470" fill="none" stroke="#40505f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="219" y="647" font-size="22" fill="#17212b" text-anchor="end" font-weight="400">D26</text>
+<text x="486" y="647" font-size="22" fill="#17212b" text-anchor="start" font-weight="400">AIN2</text>
+<path d="M235 640 H470" fill="none" stroke="#40505f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="219" y="732" font-size="22" fill="#2166a4" text-anchor="end" font-weight="400">GND</text>
+<text x="486" y="732" font-size="22" fill="#2166a4" text-anchor="start" font-weight="400">GND</text>
+<path d="M235 725 H470" fill="none" stroke="#2166a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="352" y="422" font-size="19" fill="#be3433" text-anchor="middle" font-weight="400">5 V</text>
+<text x="352" y="562" font-size="19" fill="#17212b" text-anchor="middle" font-weight="400">tone</text>
+<text x="352" y="632" font-size="19" fill="#17212b" text-anchor="middle" font-weight="400">inverted tone</text>
+<text x="664" y="527" font-size="22" fill="#17212b" text-anchor="end" font-weight="400">AOUT1</text>
+<text x="664" y="647" font-size="22" fill="#17212b" text-anchor="end" font-weight="400">AOUT2</text>
+<path d="M680 520 H734.0 M826.0 520 H880" fill="none" stroke="#40505f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="734.0" y="508" width="92" height="24" rx="3" fill="#e3f1fc" stroke="#40505f" stroke-width="2"/>
+<text x="780.0" y="498" font-size="21" fill="#17212b" text-anchor="middle" font-weight="400">R1 · 1 kΩ</text>
+<path d="M880 520 H961 V534" fill="none" stroke="#40505f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M680 640 H961 V626" fill="none" stroke="#40505f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="975" cy="580" r="46" fill="#f6ecc9" stroke="#a08a3c" stroke-width="2"/>
+<text x="975" y="574" font-size="21" fill="#17212b" text-anchor="middle" font-weight="400">TX</text>
+<text x="975" y="602" font-size="21" fill="#17212b" text-anchor="middle" font-weight="400">piezo</text>
+<text x="1027" y="542" font-size="20" fill="#be3433" text-anchor="start" font-weight="400">red</text>
+<text x="1027" y="632" font-size="20" fill="#17212b" text-anchor="start" font-weight="400">black</text>
+<text x="40" y="812" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">The two outputs swap every half-wave, so the disc gets +5 V, then −5 V:</text>
+<text x="40" y="842" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">about 10 V peak to peak instead of 3.3 V from a bare pin.</text>
+<text x="40" y="884" font-size="21" fill="#be3433" text-anchor="start" font-weight="400">Piezo black goes to AOUT2, NOT to GND: AOUT2 drives high half of the time.</text>
+<text x="40" y="926" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">Leave BIN1, BIN2, BOUT1, BOUT2 and nFAULT unconnected.</text>
+<text x="40" y="968" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">Pins move when you turn the module over: a top-view drawing is mirrored</text>
+<text x="40" y="998" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">on the underside. Check each pin on the module itself before powering up.</text>
+<path d="M40 1030 H1060" fill="none" stroke="#ced8df" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="40" y="1064" font-size="27" fill="#17212b" text-anchor="start" font-weight="600">2  WITHOUT THE DRIVER (quieter, the first tests)</text>
+<rect x="45" y="1100" width="190" height="180" rx="8" fill="#edf5fa" stroke="#40505f" stroke-width="2"/>
+<text x="140.0" y="1134" font-size="23" fill="#17212b" text-anchor="middle" font-weight="600">ESP32</text>
+<text x="219" y="1177" font-size="22" fill="#17212b" text-anchor="end" font-weight="400">D25</text>
+<text x="219" y="1257" font-size="22" fill="#2166a4" text-anchor="end" font-weight="400">GND</text>
+<path d="M235 1170 H351.5 M443.5 1170 H560" fill="none" stroke="#40505f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="351.5" y="1158" width="92" height="24" rx="3" fill="#e3f1fc" stroke="#40505f" stroke-width="2"/>
+<text x="397.5" y="1148" font-size="21" fill="#17212b" text-anchor="middle" font-weight="400">R1 · 1 kΩ</text>
+<path d="M560 1170 H677.3" fill="none" stroke="#40505f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M235 1250 H677.3" fill="none" stroke="#2166a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="700" cy="1210" r="46" fill="#f6ecc9" stroke="#a08a3c" stroke-width="2"/>
+<text x="700" y="1204" font-size="21" fill="#17212b" text-anchor="middle" font-weight="400">TX</text>
+<text x="700" y="1232" font-size="21" fill="#17212b" text-anchor="middle" font-weight="400">piezo</text>
+<text x="730" y="1160" font-size="20" fill="#be3433" text-anchor="start" font-weight="400">red</text>
+<text x="730" y="1276" font-size="20" fill="#17212b" text-anchor="start" font-weight="400">black</text>
+<text x="800" y="1150" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">Remove -DDRIVE_BRIDGE=1</text>
+<text x="800" y="1180" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">from the transmitter's</text>
+<text x="800" y="1210" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">platformio.ini.</text>
+<text x="800" y="1250" font-size="21" fill="#17212b" text-anchor="start" font-weight="400">0 to 3.3 V on the disc.</text>
+<path d="M40 1318 H1060" fill="none" stroke="#ced8df" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="40" y="1352" font-size="20" fill="#17212b" text-anchor="start" font-weight="600">TOTAL: 1 ESP32 · 1 DRV8833 module · 1 resistor 1 kΩ · 1 piezo disc (27 mm, passive)</text>
+<text x="40" y="1386" font-size="20" fill="#17212b" text-anchor="start" font-weight="400">Power from USB or a power bank: the DRV8833 runs from the ESP32 VIN pin (about 5 V).</text>
+</g></svg>
