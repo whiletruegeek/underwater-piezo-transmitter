@@ -4,7 +4,7 @@ Two ESP32 boards that send data with sound, through air and then through seawate
 27 mm piezo discs. This is the code and wiring from Part 1 of the video series, where everything
 was built on breadboards.
 
-Video: *link coming soon*
+Watch Part 1 on YouTube: https://youtu.be/eRAA0moBhho
 
 ## How far it got
 
